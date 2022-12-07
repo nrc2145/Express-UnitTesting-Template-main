@@ -1,0 +1,52 @@
+{
+  "name": "express-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "npm run build && node ./build/index.js",
+    "start:dev": "nodemon --exec babel-node src/index .js",
+    "build:babel": "babel -d ./build ./src -s",
+    "build": "npm run build:babel",
+    "prettier": "prettier src/**/*.js",
+    "prettier:fix": "prettier --write src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MISIONTIC-UN-2022/Express-Testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MISIONTIC-UN-2022/Express-Testing/issues"
+  },
+  "homepage": "https://github.com/MISIONTIC-UN-2022/Express-Testing#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.1.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^25.2.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.4.1",
+    "supertest": "^6.1.6"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
