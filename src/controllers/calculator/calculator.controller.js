@@ -10,7 +10,7 @@ const router = Router();
 
 router.post('/add', async (req, res) => {
   const { a, b } = req.body;
-  res.json({ operation: 'Suma', result: a + b });
+  res.json({ operation: 'Resta', result: a + b });
 });
 
 router.post('/sub', async (req, res) => {
